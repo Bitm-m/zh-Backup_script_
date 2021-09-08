@@ -1,6 +1,7 @@
 # backup_script 简体中文版
 
 [![Stars](https://img.shields.io/github/stars/Petit-Abba/backup_script_zh-CN?label=Stars)](https://github.com/Petit-Abba/backup_script_zh-CN/stargazers)
+[![Release](https://img.shields.io/github/v/release/Petit-Abba/backup_script_zh-CN?label=Release)](https://github.com/Petit-Abba/backup_script_zh-CN/releases/latest)
 [![Download](https://img.shields.io/github/downloads/Petit-Abba/backup_script_zh-CN/total)](https://github.com/Petit-Abba/backup_script_zh-CN/releases)
 
 > 原版作者: [酷安@落叶凄凉TEL](http://www.coolapk.com/u/2277637)
