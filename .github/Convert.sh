@@ -34,6 +34,7 @@ if [ "${Previous_version}" != "${Latest_version}" ]; then
   echo "- 列出${home}/v${Latest_version}目录文件/文件夹"
   ls ${home}/v${Latest_version}
 
+  echo "- 开始转换"
   # 转文件名为简体
   for file in `find ${home} -type f -name "*.sh" -or -name "*.zip"`
   do
@@ -42,11 +43,12 @@ if [ "${Previous_version}" != "${Latest_version}" ]; then
   done
 
   # 转文件内容为简体
-  for file_Content in `find ${home} -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary"`
+  for file_Content in `find ${home} -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast"`
   do
     echo "${file_Content}"
     opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
   done
+  echo "- 转换完成!"
 
   echo "- 压缩${home}/v${Latest_version}目录下所有文件到${home}/zip/v${Latest_version}.zip"
   zip -r ${home}/zip/v${Latest_version}.zip ${home}/v${Latest_version}/*
