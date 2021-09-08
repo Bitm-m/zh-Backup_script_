@@ -2,7 +2,6 @@
 
 [![Stars](https://img.shields.io/github/stars/Petit-Abba/backup_script_zh-CN)](https://github.com/Petit-Abba/backup_script_zh-CN/stargazers)
 [![Download](https://img.shields.io/github/downloads/Petit-Abba/backup_script_zh-CN/total)](https://github.com/Petit-Abba/backup_script_zh-CN/releases)
-[![issues](https://img.shields.io/github/issues/Petit-Abba/backup_script_zh-CN/had)](https://github.com/Petit-Abba/backup_script_zh-CN/issues)
 
 > 原版作者: [酷安@落叶凄凉TEL](http://www.coolapk.com/u/2277637)
 
@@ -26,3 +25,5 @@
 | 2021-09-09 00:27:44 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
  ---- 
 若使用有问题，请建立issues。`2021-09-09 06:40:12`
+
+[![issues](https://img.shields.io/github/issues/Petit-Abba/backup_script_zh-CN/had)](https://github.com/Petit-Abba/backup_script_zh-CN/issues)
