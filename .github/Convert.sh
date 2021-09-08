@@ -58,7 +58,7 @@ if [ "${Previous_version}" != "${Latest_version}" ]; then
   echo "- 查看${home}/zip/v${Latest_version}.zip文件大小"
   ls -lh ${home}/zip/v${Latest_version}.zip
 
-  sed -i "/| :----: | :----: | :----: |/a\\| $(date "+%Y-%m-%d %H:%M:%S") | v${Latest_version} | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/zh-CN/v${Latest_version}.zip) |" "${home}/README.md"
+  sed -i "/| :----: | :----: | :----: |/a\\| $(date "+%Y-%m-%d %H:%M:%S") | v${Latest_version} | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${Latest_version}/v${Latest_version}.zip) |" "${home}/README.md"
   [ "$?" == "0" ] && echo "(&) 输出完成！"
 
   rm -rf ${home}/Download/
