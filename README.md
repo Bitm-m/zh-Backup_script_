@@ -4,12 +4,12 @@
 [![Release](https://img.shields.io/github/v/release/Petit-Abba/backup_script_zh-CN?label=Release)](https://github.com/Petit-Abba/backup_script_zh-CN/releases/latest)
 [![Download](https://img.shields.io/github/downloads/Petit-Abba/backup_script_zh-CN/total)](https://github.com/Petit-Abba/backup_script_zh-CN/releases)
 
+## 概述
+  **数据备份脚本**由原作者创作至今广受好评，备份/恢复数据高效且齐全。因原作者是台湾人`(高雄佬)`，所以使用的是繁体字制作，而**大陆有部分人喜欢简体，又或者一些人看不懂繁体，故而产生了这个项目**。
+
 > 原版作者: [酷安@落叶凄凉TEL](http://www.coolapk.com/u/2277637)
 
 > 原版数据备份脚本: [YAWAsau/backup_script](https://github.com/YAWAsau/backup_script)
-
-## 概述
-  **数据备份脚本**由原作者创作至今广受好评，备份/恢复数据高效且齐全。因原作者是台湾人`(高雄佬)`，所以使用的是繁体字制作，而**大陆有部分人喜欢简体，又或者一些人看不懂繁体，故而产生了这个项目**。
 
 ## CI自动构建
 - `脚本开源 安全可靠`
