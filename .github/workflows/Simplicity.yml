@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '*/30 * * * *'
 
+env: 
+  TZ: Asia/Shanghai
+
 jobs:
 
   build:
@@ -21,8 +24,6 @@ jobs:
 
       - name: Run Script
         run: bash ./.github/Convert.sh
-        env: 
-          TZ: Asia/Shanghai
 
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
@@ -32,22 +33,17 @@ jobs:
           prerelease: false
           title: "v${{ env.ReleaseVersion }}"
           files: zip/v${{ env.ReleaseVersion }}.zip
-        env:
-          TZ: Asia/Shanghai
 
       - name: Submit Information
         run: |
           git config --local user.email "1306144276@qq.com"
           git config --local user.name "Petit-Abba"
           git add .
-          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" -a
-        env: 
-          TZ: Asia/Shanghai
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
+
 
       - name: Master
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-        env:
-          TZ: Asia/Shanghai
