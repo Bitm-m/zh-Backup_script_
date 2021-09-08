@@ -29,7 +29,7 @@ jobs:
         if: env.Judgement_Push == 'true'
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          automatic_release_tag: "zh-CN"
+          automatic_release_tag: "${{ env.ReleaseVersion }}"
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           title: "v${{ env.ReleaseVersion }}"
@@ -41,7 +41,6 @@ jobs:
           git config --local user.name "Petit-Abba"
           git add .
           git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
-
 
       - name: Master
         uses: ad-m/github-push-action@master
