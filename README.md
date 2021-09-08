@@ -2,6 +2,7 @@
 
 [![Stars](https://img.shields.io/github/stars/Petit-Abba/backup_script_zh-CN)](https://github.com/Petit-Abba/backup_script_zh-CN/stargazers)
 [![Download](https://img.shields.io/github/downloads/Petit-Abba/backup_script_zh-CN/total)](https://github.com/Petit-Abba/backup_script_zh-CN/releases)
+[![issues](https://img.shields.io/github/issues/badges/shields/good%20first%20issue)](https://github.com/badges/shields/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 > 原版作者: [酷安@落叶凄凉TEL](http://www.coolapk.com/u/2277637)
 
