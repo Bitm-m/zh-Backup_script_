@@ -13,6 +13,8 @@ echo "ReleaseVersion=${Latest_version}" >> ${GITHUB_ENV}
 
 if [ "${Previous_version}" != "${Latest_version}" ]; then
 
+  echo "Judgement_Push=true" >> ${GITHUB_ENV}
+
   rm -rf ${home}/zip/v${Previous_version}.zip 1>/dev/null 2>&1
   echo "${Latest_version}" > "${home}/zip/version"
 
