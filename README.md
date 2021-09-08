@@ -21,4 +21,4 @@
 | :----: | :----: | :----: |
 | 2021-09-08 19:37:13 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/zh-CN/v8.8.6.zip) |
  ---- 
-若使用有问题，请建立issues。`2021-09-08 22:16:39`
+若使用有问题，请建立issues。`2021-09-08 22:38:03`
