@@ -17,11 +17,10 @@
 - `原版仓库对照本仓库zip包版本 发现新版即触发构建发包`
 
 ## 简体中文版存档
-
-若使用有问题，请建立issues。`2021-09-09 06:40:12`
-[![issues](https://img.shields.io/github/issues/Petit-Abba/backup_script_zh-CN/had)](https://github.com/Petit-Abba/backup_script_zh-CN/issues)
  ---- 
 |构建时间|版本|下载|
 | :----: | :----: | :----: |
 | 2021-09-09 00:27:44 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
  ---- 
+若使用有问题，请建立issues。`2021-09-09 06:40:12`
+[![issues](https://img.shields.io/github/issues/Petit-Abba/backup_script_zh-CN/had)](https://github.com/Petit-Abba/backup_script_zh-CN/issues)
