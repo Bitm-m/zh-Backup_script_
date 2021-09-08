@@ -1,0 +1,53 @@
+name: Convert
+
+on: push
+#  schedule:
+#    - cron: '*/30 * * * *'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Install OpenCC
+        run: |
+          brew install OpenCC
+          opencc --version
+
+      - name: Run Script
+        run: bash ./.github/Convert.sh
+        env: 
+          TZ: Asia/Shanghai
+
+      - name: Release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          automatic_release_tag: "zh-CN"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          title: "v${{ env.ReleaseVersion }}"
+          files: zip/v${{ env.ReleaseVersion }}.zip
+        env:
+          TZ: Asia/Shanghai
+
+      - name: Submit Information
+        run: |
+          git config --local user.email "1306144276@qq.com"
+          git config --local user.name "Petit-Abba"
+          git add .
+          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" -a
+        env: 
+          TZ: Asia/Shanghai
+
+      - name: Master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+        env:
+          TZ: Asia/Shanghai
