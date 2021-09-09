@@ -34,15 +34,15 @@ echo "- 开始转换"
 # 转文件名为简体
 for file in `find ${home} -type f -name "*.sh" -or -name "*.zip"`
 do
-echo "${file}"
-mv "${file}" "$(echo "${file}" | opencc -c t2s)" 1>/dev/null 2>&1
+  echo "${file}"
+  mv "${file}" "$(echo "${file}" | opencc -c t2s)" 1>/dev/null 2>&1
 done
 
 # 转文件内容为简体
 for file_Content in `find ${home} -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast"`
 do
-echo "${file_Content}"
-opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
+  echo "${file_Content}"
+  opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
 done
 echo "- 转换完成!"
 

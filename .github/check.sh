@@ -8,11 +8,11 @@ Latest_version="$(echo ${Latest_version} | awk -F "/" '{print $2}')"
 
 echo "- 当前时间: $(date '+%Y-%m-%d %H:%M:%S')"
 echo "- 原仓库最新版本: v${Latest_version}"
-echo "- 本仓库最新版本: v${Previous_version}"
+echo "- 本仓库最新版本v${Previous_version}"
 
 if [ "${Previous_version}" != "${Latest_version}" ]; then
-  #env传参
   echo "- 可更新构建"
+  # env传参
   echo "new_version=yes" >> ${GITHUB_ENV}
   echo "ReleaseVersion=${Latest_version}" >> ${GITHUB_ENV}
 else
