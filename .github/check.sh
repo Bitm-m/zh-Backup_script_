@@ -27,4 +27,4 @@ else
   echo "- 暂无新版更新"
 fi
 
-[ -e "${home}/zip/v${Previous_version}.zip" ] && rm -rf ${home}/zip/v${Previous_version}.zip && echo "- 清除残留zip包 减少资源占用"
+rm -rf ${home}/zip/v${Previous_version}.zip 1>/dev/null 2>&1 && echo "- 清除残留zip包 减少资源占用"
