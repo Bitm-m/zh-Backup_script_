@@ -1,16 +1,46 @@
 name: Construct
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
-
-env: 
-  TZ: Asia/Shanghai
+    - cron: "*/30 * * * *"
+  watch:
+    types: [started]
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id # 自己点的 start
+
+    steps:
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: pip install lastversion
+
+      - name: Run script
+        id: identify
+        run: |
+          Latest_version="$(lastversion YAWAsau/backup_script)"
+          Previous_version="$(lastversion Petit-Abba/backup_script_zh-CN)"
+          if [ "${Previous_version}" != "${Latest_version}" ]; then
+          echo "::set-output name=update_status::true"
+          echo "::set-output name=release_version::${Latest_version}"
+          fi
+    outputs:
+      update_status: ${{ steps.identify.outputs.update_status }}
+      release_version: ${{ steps.identify.outputs.release_version }}
 
   build:
+    needs: check
+    env:
+      TZ: Asia/Shanghai
     runs-on: ubuntu-latest
+    if: ${{needs.check.outputs.update_status == 'true'}}
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -26,8 +56,9 @@ jobs:
         run: bash ./.github/Convert.sh
 
       - name: Release
-        if: env.Judgement_Push == 'true'
         uses: marvinpinto/action-automatic-releases@latest
+        env:
+          ReleaseVersion: ${{needs.check.outputs.release_version}}
         with:
           automatic_release_tag: "${{ env.ReleaseVersion }}"
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -35,14 +66,17 @@ jobs:
           title: "v${{ env.ReleaseVersion }}"
           files: zip/v${{ env.ReleaseVersion }}.zip
 
+      - name: Set git identity
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
+
       - name: Submit Information
         run: |
-          git config --local user.email "1306144276@qq.com"
-          git config --local user.name "Petit-Abba"
           git add .
           git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
 
-      - name: Master
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
