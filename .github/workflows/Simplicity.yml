@@ -3,7 +3,7 @@ name: Convert
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: 0 * * * *
 
 env: 
   TZ: Asia/Shanghai
@@ -12,8 +12,10 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout codes
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
           fetch-depth: 0
