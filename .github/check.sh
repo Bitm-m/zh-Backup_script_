@@ -15,6 +15,16 @@ if [ "${Previous_version}" != "${Latest_version}" ]; then
   # env传参
   echo "new_version=yes" >> ${GITHUB_ENV}
   echo "ReleaseVersion=${Latest_version}" >> ${GITHUB_ENV}
+  # 
+  [ ! -d "${home}/zip" ] && echo "- 创建${home}/zip目录" && mkdir -p ${home}/zip
+  # 变量传参
+  echo "${Latest_version}" > "${home}/zip/version"
+  echo "# $(date '+%Y-%m-%d %H:%M:%S')" > "${home}/zip/update.md"
+  echo "# ${Previous_version} --> ${Latest_version}" >> "${home}/zip/update.md"
+  echo "Latest_version=\"${Latest_version}\"" >> "${home}/zip/update.md"
+  echo "Previous_version=\"${Previous_version}\"" >> "${home}/zip/update.md"
 else
   echo "- 暂无新版更新"
 fi
+
+[ -e "${home}/zip/v${Previous_version}.zip" ] && rm -rf ${home}/zip/v${Previous_version}.zip && echo "- 清除残留zip包 减少资源占用"
