@@ -35,14 +35,17 @@ jobs:
           title: "v${{ env.ReleaseVersion }}"
           files: zip/v${{ env.ReleaseVersion }}.zip
 
+      - name: Set git identity
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
+          
       - name: Submit Information
         run: |
-          git config --local user.email "1306144276@qq.com"
-          git config --local user.name "Petit-Abba"
           git add .
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S)`" -a
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')" -a
 
-      - name: Master
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
