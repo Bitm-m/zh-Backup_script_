@@ -1,8 +1,9 @@
 name: Convert
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/60 * * * *'
 
 env: 
   TZ: Asia/Shanghai
@@ -17,32 +18,40 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      - name: Check
+        run: bash ./.github/check.sh
+
       - name: Install OpenCC
+        if: env.new_version == 'yes'
         run: |
           brew install OpenCC
           opencc --version
 
       - name: Run Script
+        if: env.new_version == 'yes'
         run: bash ./.github/Convert.sh
 
       - name: Release
-        if: env.Judgement_Push == 'true'
+        if: env.new_version == 'yes'
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          automatic_release_tag: "${{ env.ReleaseVersion }}"
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
+          automatic_release_tag: "${{ env.ReleaseVersion }}"
           title: "v${{ env.ReleaseVersion }}"
           files: zip/v${{ env.ReleaseVersion }}.zip
 
-      - name: Submit Information
+      - name: Set git identity
         run: |
-          git config --local user.email "1306144276@qq.com"
-          git config --local user.name "Petit-Abba"
-          git add .
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S)`" -a
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
 
-      - name: Master
+      - name: Submit
+        run: |
+          git add .
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')" -a
+
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
