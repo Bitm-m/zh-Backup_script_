@@ -7,7 +7,7 @@ Latest_version="$(echo ${Latest_version} | awk -F "/" '{print $2}')"
 [ -f "${home}/zip/version" ] && Previous_version="$(cat ${home}/zip/version)" || Previous_version=""
 
 echo "- 当前时间: $(date '+%Y-%m-%d %H:%M:%S')"
-echo "- 原仓库最新版本: ${Latest_version}"
+echo "- 原仓库最新版本: v${Latest_version}"
 
 if [ "${Previous_version}" != "${Latest_version}" ]; then
   #env传参
