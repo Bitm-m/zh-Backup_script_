@@ -23,7 +23,6 @@
 |构建时间|版本|下载|
 | :----: | :----: | :----: |
 | 2021-09-09 16:45:18 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
-| 2021-09-09 15:49:19 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
  ---- 
  
 若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2021-09-09 16:44:55`
