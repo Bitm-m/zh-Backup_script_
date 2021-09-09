@@ -6,8 +6,14 @@ Latest_version="$(curl "https://github.com/YAWAsau/backup_script/releases" -sL |
 Latest_version="$(echo ${Latest_version} | awk -F "/" '{print $2}')"
 [ -f "${home}/zip/version" ] && Previous_version="$(cat ${home}/zip/version)" || Previous_version=""
 
+echo "- 当前时间: $(date '+%Y-%m-%d %H:%M:%S')"
+echo "- 原仓库最新版本: ${Latest_version}"
+
 if [ "${Previous_version}" != "${Latest_version}" ]; then
   #env传参
+  echo "- 可更新构建"
   echo "new_version=yes" >> ${GITHUB_ENV}
   echo "ReleaseVersion=${Latest_version}" >> ${GITHUB_ENV}
+else
+  echo "- 暂无新版更新"
 fi
