@@ -27,8 +27,8 @@ jobs:
           Latest_version="$(lastversion YAWAsau/backup_script)"
           Previous_version="$(lastversion Petit-Abba/backup_script_zh-CN)"
           if [ "${Previous_version}" != "${Latest_version}" ]; then
-          echo "::set-output name=update_status::true"
-          echo "::set-output name=release_version::${Latest_version}"
+              ::set-output name=update_status::true
+              ::set-output name=release_version::${Latest_version}
           fi
     outputs:
       update_status: ${{ steps.identify.outputs.update_status }}
