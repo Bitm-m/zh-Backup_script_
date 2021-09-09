@@ -39,7 +39,7 @@ jobs:
     env:
       TZ: Asia/Shanghai
     runs-on: ubuntu-latest
-    if: ${{needs.check.outputs.update_status == 'true'}}
+    if: needs.check.outputs.update_status == 'true'
 
     steps:
       - uses: actions/checkout@v2
