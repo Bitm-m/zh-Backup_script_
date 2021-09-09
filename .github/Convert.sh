@@ -2,8 +2,6 @@
 home="."
 #home="${0%/*}"
 
-sed -i "/^若使用有问题/c 若使用有问题，请建立issues。\`$(date "+%Y-%m-%d %H:%M:%S")\`" "${home}/README.md"
-
 Latest_version="$(curl "https://github.com/YAWAsau/backup_script/releases" -sL | awk -F "/YAWAsau/backup_script/releases/download" '{print $2}' | awk -F ".zip" '{print $1}')"
 Latest_version="$(echo ${Latest_version} | awk -F "/" '{print $2}')"
 
