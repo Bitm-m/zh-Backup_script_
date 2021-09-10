@@ -1,5 +1,5 @@
 # backup_script 简体中文版
-![主图](https://github.com/Petit-Abba/backup_script_zh-CN/blob/8383b9a8083c4b2f0456bcae864d4d438e86d2a5/File/mmexport1631297554615.png)
+![主图](https://github.com/Petit-Abba/backup_script_zh-CN/blob/c085edb56dcc1314ea8eb2f8ef90dcd9cc4d945e/File/mmexport1631297795059.png)
 [![Stars](https://img.shields.io/github/stars/Petit-Abba/backup_script_zh-CN?label=stars)](https://github.com/Petit-Abba)
 [![Download](https://img.shields.io/github/downloads/Petit-Abba/backup_script_zh-CN/total)](https://github.com/Petit-Abba/backup_script_zh-CN/releases)
 [![Release](https://img.shields.io/github/v/release/Petit-Abba/backup_script_zh-CN?label=release)](https://github.com/Petit-Abba/backup_script_zh-CN/releases/latest)
