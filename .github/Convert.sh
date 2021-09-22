@@ -38,8 +38,8 @@ run() {
   done
   echo "- 转换完成!"
 
-  echo "- 压缩${home}/$3目录下所有文件到${home}/zip/$2"
-  zip ${home}/zip/$2 ${home}/$3/*
+  echo "- 压缩${home}/$3目录下所有文件/文件夹到${home}/zip/$2"
+  cd ${home}/$3 && zip -r ${home}/zip/$2 *
 
   echo "- 查看${home}/zip/$2文件大小"
   ls -lh ${home}/zip/$2
