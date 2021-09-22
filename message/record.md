@@ -1,0 +1,8 @@
+https://github.com/YAWAsau/backup_script/releases/download/8.7.5/v8.7.5.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8/v8.8.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8.1/v8.8.1.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8.3/v8.8.2-test.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8.6/v8.8.6.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8.7/v8.8.7.zip
+https://github.com/YAWAsau/backup_script/releases/download/8.8.9/v8.8.9.zip
+https://github.com/YAWAsau/backup_script/releases/download/9.1/v9.1.zip
