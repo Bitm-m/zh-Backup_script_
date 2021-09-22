@@ -26,7 +26,8 @@ if [ "${A}" != "${B}" ]; then
   echo "- 可更新构建"
   echo "# $(date '+%Y-%m-%d %H:%M:%S')" > ${home}/message/update.md
   echo ""  >> ${home}/message/update.md
-  echo "tgas_name=\"$(echo ${A} | awk -F '/' '{print $8}')\"" >> ${home}/message/update.md
+  tgas_name="$(echo ${A} | awk -F '/' '{print $8}')"
+  echo "tgas_name=\"${tags_name}\"" >> ${home}/message/update.md
   echo "ReleaseVersion=${tags_name}" >> ${GITHUB_ENV} 
   echo "new_version=yes" >> ${GITHUB_ENV}
   for i in $(cat ${home}/message/update_url)
