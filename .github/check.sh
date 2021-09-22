@@ -12,11 +12,11 @@ for i in ${version_list}
 do
   if [ "`cat ${home}/message/record.md | grep "${i}"`" == "" ]; then
     A="https://github.com${i}"
-    echo "$A" >> ${home}/message/record.md
+    echo "${A}" >> ${home}/message/record.md
     if [ ! -f "${home}/message/update_url" ]; then
-      echo "$A" > ${home}/message/update_url
+      echo "${A}" > ${home}/message/update_url
     else
-      echo "$A" >> ${home}/message/update_url
+      echo "${A}" >> ${home}/message/update_url
     fi
   fi
 done
