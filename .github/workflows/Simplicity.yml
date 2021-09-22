@@ -41,7 +41,7 @@ jobs:
           prerelease: false
           automatic_release_tag: "${{ env.ReleaseVersion }}"
           title: "v${{ env.ReleaseVersion }}"
-          files: zip/v${{ env.ReleaseVersion }}.zip
+          files: Release/*
 
       - name: Set git identity
         run: |
