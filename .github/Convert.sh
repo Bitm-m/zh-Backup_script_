@@ -51,7 +51,7 @@ run() {
   rm -rf ${home}/$3/
 }
 
-source ${home}/zip/update.md
+source ${home}/message/update.md
 [ ! -d ${home}/Release ] && mkdir -p ${home}/Release
 
 if [ ! -z "${Backup_script_url}" ]; then
