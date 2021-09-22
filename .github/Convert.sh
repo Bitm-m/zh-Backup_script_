@@ -2,6 +2,7 @@ home="."
 #home="${0%/*}"
 
 run() {
+  echo "==================[ Run: $2 ]==================="
   [ ! -d "${home}/zip" ] && echo "- 创建${home}/zip目录" && mkdir -p ${home}/zip
   echo "- 创建${home}/Download目录"
   mkdir -p ${home}/Download
@@ -49,6 +50,7 @@ run() {
   rm -rf ${home}/Download/
   rm -rf ${home}/zip/
   rm -rf ${home}/$3/
+  echo "==================[ END: $2 ]==================="
 }
 
 source ${home}/message/update.md
@@ -66,5 +68,5 @@ fi
 
 [ ! -z "${Magisk_modules}" ] && Magisk_name="[${Magisk_modules}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Magisk_modules})" || Magisk_name="无"
 
-sed -i "/| :----: | :----: | :----: | :----: |/a\\| $(date "+%Y-%m-%d %H:%M:%S") | ${tgas_name} | [${Backup_script}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Backup_script}) | ${Magisk_name} |" "${home}/README.md"
+sed -i "/| :----: | :----: | :----: | :----: |/a\\| $(date "+%Y/%m/%d %H:%M:%S") | ${tgas_name} | [${Backup_script}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Backup_script}) | ${Magisk_name} |" "${home}/README.md"
 [ "$?" == "0" ] && echo "(&) 输出完成！"
