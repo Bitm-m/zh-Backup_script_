@@ -26,11 +26,10 @@
 |构建时间|版本|备份脚本|面具模块|
 | :----: | :----: | :----: | :----: |
 | 2021-09-23 05:54:40 | 9.3 | [v9.3.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/v9.3.zip) | [Magisk.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/Magisk.zip) |
-| 2021-09-21 21:03:42 | v9.3 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/v9.3.zip) | 无 |
-| 2021-09-17 23:22:51 | v9.1 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.1/v9.1.zip) | 无 |
-| 2021-09-12 20:33:49 | v8.8.9 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.9/v8.8.9.zip) | 无 |
-| 2021-09-09 20:12:32 | v8.8.7 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.7/v8.8.7.zip) | 无 |
-| 2021-09-09 16:45:18 | v8.8.6 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) | 无 |
+| 2021-09-17 23:22:51 | 9.1 | [v9.1.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.1/v9.1.zip) | 无 |
+| 2021-09-12 20:33:49 | 8.8.9 | [v8.8.9.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.9/v8.8.9.zip) | 无 |
+| 2021-09-09 20:12:32 | 8.8.7 | [v8.8.7.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.7/v8.8.7.zip) | 无 |
+| 2021-09-09 16:45:18 | 8.8.6 | [v8.8.6.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) | 无 |
  ---- 
  
 若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2021-09-23 05:54:28`
