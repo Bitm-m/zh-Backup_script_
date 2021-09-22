@@ -40,7 +40,7 @@ run() {
 
   echo "- 压缩${home}/$3目录下所有文件/文件夹到${home}/zip/$2"
   pushd ${home}/$3
-  zip -r ../../$2 *
+  zip -r ${home}/zip/$2 ./*
   popd
 
   cd ${home}/$3 && zip ${home}/zip/$2 ./*
