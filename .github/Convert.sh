@@ -31,7 +31,7 @@ run() {
   done
 
   # 转文件内容为简体
-  for file_Content in `find ${home}/$3 -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast" -or -name "log" -or -name "*Magisk*"`
+  for file_Content in `find ${home}/$3 -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast" -or -name "log" -or -name "*Magisk*" -or -name "module.prop*"`
   do
     echo "${file_Content}"
     opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
@@ -39,7 +39,7 @@ run() {
   echo "- 转换完成!"
 
   echo "- 压缩${home}/$3目录下所有文件/文件夹到${home}/zip/$2"
-  #zip -r ${home}/zip/$2 ${home}/$3
+  #zip -r ${home}/zip/$2 ${home}/$3 (辣鸡zip吃屁去！)
   7za a -tzip -r ${home}/zip/$2 ${home}/$3/*
 
   echo "- 查看${home}/zip/$2文件大小"
