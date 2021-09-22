@@ -1,29 +1,53 @@
 
 home="."
+
 sed -i "/^若使用有问题/c 若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。\`$(date "+%Y-%m-%d %H:%M:%S")\`" "${home}/README.md"
 
-Latest_version="$(curl "https://github.com/YAWAsau/backup_script/releases" -sL | awk -F "/YAWAsau/backup_script/releases/download" '{print $2}' | awk -F ".zip" '{print $1}')"
-Latest_version="$(echo ${Latest_version} | awk -F "/" '{print $2}')"
-[ -f "${home}/zip/version" ] && Previous_version="$(cat ${home}/zip/version)" || Previous_version=""
-rm -rf ${home}/zip/v${Previous_version}.zip 1>/dev/null 2>&1
+A="`cat ${home}/message/record.md | awk 'END {print}'`"
+B="`cat ${home}/message/record.md | awk 'END {print}'`"
 
-echo "- 当前时间: $(date '+%Y-%m-%d %H:%M:%S')"
-echo "- 原仓库最新版本: v${Latest_version}"
-echo "- 本仓库最新版本: v${Previous_version}"
+#version_list="`cat ./1.txt | grep "/YAWAsau/backup_script/releases/download" | awk -F 'href="' '{print $2}' | awk -F '"' '{print $1}'`"
+version_list="`curl 'https://github.com/YAWAsau/backup_script/releases' -sL | grep "/YAWAsau/backup_script/releases/download" | awk -F 'href="' '{print $2}' | awk -F '"' '{print $1}'`"
 
-if [ "${Previous_version}" != "${Latest_version}" ]; then
+for i in ${version_list}
+do
+  if [ "`cat ${home}/message/record.md | grep "$i"`" == "" ]; then
+    A="https://github.com${i}"
+    echo "$A" >> ${home}/message/record.md
+    if [ ! -f "${home}/message/update_url" ]; then
+      echo "$A" > ${home}/message/update_url
+    else
+      echo "$A" >> ${home}/message/update_url
+    fi
+  fi
+done
+
+if [ "${A}" != "${B}" ]; then
   echo "- 可更新构建"
-  # env传参
+  echo "# $(date '+%Y-%m-%d %H:%M:%S')" > ${home}/message/update.md
+  echo ""  >> ${home}/message/update.md
+  echo "tgas_name=\"$(echo ${A} | awk -F '/' '{print $8}')\"" >> ${home}/message/update.md
+  echo "ReleaseVersion=${tags_name}" >> ${GITHUB_ENV} 
   echo "new_version=yes" >> ${GITHUB_ENV}
-  echo "ReleaseVersion=${Latest_version}" >> ${GITHUB_ENV}
-  # 
-  [ ! -d "${home}/zip" ] && echo "- 创建${home}/zip目录" && mkdir -p ${home}/zip
-  # 变量传参
-  echo "${Latest_version}" > "${home}/zip/version"
-  echo "# $(date '+%Y-%m-%d %H:%M:%S')" > "${home}/zip/update.md"
-  echo "# ${Previous_version} --> ${Latest_version}" >> "${home}/zip/update.md"
-  echo "Latest_version=\"${Latest_version}\"" >> "${home}/zip/update.md"
-  echo "Previous_version=\"${Previous_version}\"" >> "${home}/zip/update.md"
+  for i in $(cat ${home}/message/update_url)
+  do
+    case ${i} in
+      *agisk*) 
+        echo ""  >> ${home}/message/update.md
+        echo "Magisk_modules=\"$(echo ${i} | awk -F '/' '{print $9}')\"" >> ${home}/message/update.md
+        echo ""  >> ${home}/message/update.md
+        echo "Magisk_modules_url=\"${i}\"" >> ${home}/message/update.md
+        ;;
+      *.*.*) 
+        echo ""  >> ${home}/message/update.md
+        echo "Backup_script=\"$(echo ${i} | awk -F '/' '{print $9}')\""  >> ${home}/message/update.md
+        echo ""  >> ${home}/message/update.md
+        echo "Backup_script_url=\"${i}\"" >> ${home}/message/update.md
+        ;;
+    esac
+  done
+  rm -rf ${home}/message/update_url
 else
   echo "- 暂无新版更新"
 fi
+rm -rf ${home}/Release 1>/dev/null 2>&1
