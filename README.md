@@ -23,8 +23,8 @@
 ## 简体中文版存档
 
  ---- 
-|构建时间|版本|下载|
-| :----: | :----: | :----: |
+|构建时间|版本|备份脚本|面具模块|
+| :----: | :----: | :----: | :----: |
 | 2021-09-21 21:03:42 | v9.3 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/v9.3.zip) |
 | 2021-09-17 23:22:51 | v9.1 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.1/v9.1.zip) |
 | 2021-09-12 20:33:49 | v8.8.9 | [Download](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.9/v8.8.9.zip) |
