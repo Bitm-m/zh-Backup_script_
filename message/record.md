@@ -8,3 +8,4 @@ https://github.com/YAWAsau/backup_script/releases/download/8.8.9/v8.8.9.zip
 https://github.com/YAWAsau/backup_script/releases/download/9.1/v9.1.zip
 https://github.com/YAWAsau/backup_script/releases/download/9.3/Magisk.zip
 https://github.com/YAWAsau/backup_script/releases/download/9.3/v9.3.zip
+https://github.com/YAWAsau/backup_script/releases/download/V9.6/v9.6releases.zip
