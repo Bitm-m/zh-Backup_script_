@@ -40,7 +40,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           automatic_release_tag: "${{ env.ReleaseVersion }}"
-          title: "v${{ env.ReleaseVersion }}"
+          title: "${{ env.ReleaseVersion }}"
           files: Release/*
 
       - name: Set git identity
