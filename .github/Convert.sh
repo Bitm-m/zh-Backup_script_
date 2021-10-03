@@ -31,7 +31,7 @@ run() {
   done
 
   # 转文件内容为简体
-  for file_Content in `find ${home}/$3 -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast" -or -name "log" -or -name "*Magisk*" -or -name "module.prop*"`
+  for file_Content in `find ${home}/$3 -type f -name "*.md" -or -name "*.conf" -or -name "*.sh" -or -name "restore*" -or -name "update-binary" -or -name "toast" -or -name "log" -or -name "*Magisk*" -or -name "module.prop*" -or -name "get_*"`
   do
     echo "${file_Content}"
     opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
