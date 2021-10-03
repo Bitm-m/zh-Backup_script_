@@ -25,7 +25,6 @@
  ---- 
 |构建时间|版本|备份脚本|面具模块|
 | :----: | :----: | :----: | :----: |
-| 2021/10/04 00:09:10 | V9.7 | [v9.7.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V9.7/v9.7.zip) | 无 |
 | 2021/10/02 21:38:56 | 9.6 | [v9.6.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.6/v9.6.zip) | 无 |
 | 2021/09/23 07:32:33 | 9.3 | [v9.3.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/v9.3.zip) | [Magisk.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.3/Magisk.zip) |
 | 2021/09/17 23:22:51 | 9.1 | [v9.1.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/9.1/v9.1.zip) | 无 |
