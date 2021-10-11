@@ -62,16 +62,12 @@ if [ ! -z "${Backup_script_url}" ]; then
   run "${Backup_script_url}" "${Backup_script}" "${tgas_name}"
 fi
 
-magisk_modules() {
-  if [ ! -z "${Magisk_modules_url}" ]; then
-    # run 链接 文件名 标签
-    run "${Magisk_modules_url}" "${Magisk_modules}" "${tgas_name}"
-  fi
-  [ ! -z "${Magisk_modules}" ] && Magisk_name="[${Magisk_modules}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Magisk_modules})" || Magisk_name="无"
-  #sed -i "/| :----: | :----: | :----: | :----: |/a\\| $(date "+%Y/%m/%d %H:%M:%S") | ${tgas_name} | [${Backup_script}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Backup_script}) | ${Magisk_name} |" "${home}/README.md"
-}
-magisk_modules
+if [ ! -z "${Magisk_modules_url}" ]; then
+  # run 链接 文件名 标签
+  run "${Magisk_modules_url}" "${Magisk_modules}" "${tgas_name}"
+fi
 
-sed -i "/| :----: | :----: | :----: | :----: |/a\\| $(date "+%Y/%m/%d %H:%M:%S") | ${tgas_name} | [${Backup_script}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Backup_script}) |" "${home}/README.md"
+[ ! -z "${Magisk_modules}" ] && Magisk_name="[${Magisk_modules}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Magisk_modules})" || Magisk_name="无"
 
+sed -i "/| :----: | :----: | :----: | :----: |/a\\| $(date "+%Y/%m/%d %H:%M:%S") | ${tgas_name} | [${Backup_script}](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/${tgas_name}/${Backup_script}) | ${Magisk_name} |" "${home}/README.md"
 [ "$?" == "0" ] && echo "(&) 输出完成！"
