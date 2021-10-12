@@ -1,7 +1,7 @@
-# 2021-10-11 19:41:20
+# 2021-10-12 21:38:54
 
-tgas_name="V10.1"
+tgas_name="V10.2"
 
-Backup_script="v10.1.zip"
+Backup_script="v10.2.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V10.1/v10.1.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V10.2/v10.2.zip"
