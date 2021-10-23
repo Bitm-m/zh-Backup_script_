@@ -12,7 +12,7 @@
 
 > 原版数据备份脚本: [YAWAsau/backup_script](https://github.com/YAWAsau/backup_script)
 
-  该项目目的只将繁体转为简体，其他内容均与原版同步。
+- 该项目目的只将繁体转为简体，其他内容均与原版同步。
 ## CI自动构建
 
 [![Action](https://img.shields.io/badge/build-Action-red.svg)](https://github.com/Petit-Abba/backup_script_zh-CN/actions)
