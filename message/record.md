@@ -20,3 +20,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V10.8/v10.8.zip
 https://github.com/YAWAsau/backup_script/releases/download/V10.9/10.9.zip
 https://github.com/YAWAsau/backup_script/releases/download/V11/V11.zip
 https://github.com/YAWAsau/backup_script/releases/download/V11.1/V11.1.zip
+https://github.com/YAWAsau/backup_script/releases/download/V11.4/V11.4.zip
