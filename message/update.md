@@ -1,7 +1,7 @@
-# 2021-11-20 17:18:58
+# 2021-11-22 13:17:45
 
-tgas_name="V11.7"
+tgas_name="V11.8"
 
-Backup_script="V11.7.zip"
+Backup_script="V11.8.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V11.7/V11.7.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V11.8/V11.8.zip"
