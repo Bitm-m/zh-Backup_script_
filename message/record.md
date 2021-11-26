@@ -32,3 +32,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V12.1/V12.1.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.1.1/V12.1.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.1.1/V12.1.1.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.2/V12.2.zip
+https://github.com/YAWAsau/backup_script/releases/download/V12.2.5/V12.2.5.zip
