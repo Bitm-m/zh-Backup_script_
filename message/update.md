@@ -1,7 +1,7 @@
-# 2021-12-08 21:26:21
+# 2021-12-08 23:45:55
 
-tgas_name="V12.6_fix"
+tgas_name="V12.6_bugfix"
 
-Backup_script="12.6_fix.zip"
+Backup_script="12.6_bugfix.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V12.6_fix/12.6_fix.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V12.6_bugfix/12.6_bugfix.zip"
