@@ -40,3 +40,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V12.6/V12.6.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.6_fix/12.6_fix.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.6_bugfix/12.6_bugfix.zip
 https://github.com/YAWAsau/backup_script/releases/download/V12.7/12.7.zip
+https://github.com/YAWAsau/backup_script/releases/download/V12.8/default.zip
