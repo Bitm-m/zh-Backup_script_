@@ -1,7 +1,7 @@
-# 2021-12-20 14:49:45
+# 2021-12-22 16:24:48
 
-tgas_name="V12.8-fix"
+tgas_name="V12.9fix"
 
 Backup_script="default.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V12.8-fix/default.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V12.9fix/default.zip"
