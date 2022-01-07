@@ -51,3 +51,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V13.4/default.zip
 https://github.com/YAWAsau/backup_script/releases/download/V13.4fix/default.zip
 https://github.com/YAWAsau/backup_script/releases/download/V13.5/default.zip
 https://github.com/YAWAsau/backup_script/releases/download/V13.6/default.zip
+https://github.com/YAWAsau/backup_script/releases/download/V13.7/default.zip
