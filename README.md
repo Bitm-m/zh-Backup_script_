@@ -26,6 +26,7 @@
  ---- 
 |构建时间|版本|备份脚本|
 | :----: | :----: | :----: |
+| 2022/01/23 11:40:04 | V13.9 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.9/default.zip) |
 | 2022/01/23 11:19:36 | v13.9 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/v13.9/default.zip) |
 | 2022/01/20 18:20:17 | V13.8 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.8/default.zip) |
 | 2022/01/07 22:18:31 | V13.7 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.7/default.zip) |
@@ -78,4 +79,4 @@
 | 2021/09/09 16:45:18 | 8.8.6 | [v8.8.6.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
  ---- 
  
-若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2022-01-23 11:19:18`
+若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2022-01-23 11:39:44`
