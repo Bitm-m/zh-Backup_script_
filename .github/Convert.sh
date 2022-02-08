@@ -35,10 +35,9 @@ run() {
   do
     echo "${file_Content}"
     opencc -i ${file_Content} -c t2s -o ${file_Content} 1>/dev/null 2>&1
+    chmod 777 ${file_Content}
   done
   echo "- 转换完成!"
-
-  chmod 777 ${home}/$3/*.conf
 
   echo "- 压缩${home}/$3目录下所有文件/文件夹到${home}/zip/$2"
   #zip -r ${home}/zip/$2 ${home}/$3(辣鸡zip吃屁去！)
