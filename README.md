@@ -31,7 +31,6 @@
 | 2022/01/23 20:57:22 | V14 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V14/default.zip) |
 | 2022/01/23 12:47:55 | V13.9fix | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.9fix/default.zip) |
 | 2022/01/23 11:40:04 | V13.9 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.9/default.zip) |
-| 2022/01/23 11:19:36 | v13.9 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/v13.9/default.zip) |
 | 2022/01/20 18:20:17 | V13.8 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.8/default.zip) |
 | 2022/01/07 22:18:31 | V13.7 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.7/default.zip) |
 | 2022/01/02 21:24:57 | V13.6 | [default.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V13.6/default.zip) |
