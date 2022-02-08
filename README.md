@@ -18,7 +18,7 @@
 [![Action](https://img.shields.io/badge/build-Action-red.svg)](https://github.com/Petit-Abba/backup_script_zh-CN/actions)
 
 - `脚本开源 安全可靠`
-- `每隔30分钟自动获取原仓库url链接`
+- `每隔15分钟自动获取原仓库url链接`
 - `原仓库对照本仓库url链接版本 发现新版即触发构建发包`
 
 ## 简体中文版存档
