@@ -3,7 +3,7 @@ name: Convert
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
 
 env: 
   TZ: Asia/Shanghai
