@@ -1,7 +1,7 @@
-# 2022-03-03 19:48:20
+# 2022-03-29 23:33:08
 
-tgas_name="V14.3"
+tgas_name="V14.4"
 
-Backup_script="V14.3.zip"
+Backup_script="backup_script-V14.4.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V14.3/V14.3.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V14.4/backup_script-V14.4.zip"
