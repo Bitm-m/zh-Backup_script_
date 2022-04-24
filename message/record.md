@@ -62,3 +62,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V14.2/backup_V14.2.zi
 https://github.com/YAWAsau/backup_script/releases/download/V14.3/V14.3.zip
 https://github.com/YAWAsau/backup_script/releases/download/V14.4/backup_script-V14.4.zip
 https://github.com/YAWAsau/backup_script/releases/download/V14.5/backup_script-V14.5.zip
+https://github.com/YAWAsau/backup_script/releases/download/V14.6/backup_script-V14.6.zip
