@@ -1,7 +1,7 @@
-# 2022-05-25 20:23:26
+# 2022-05-26 01:29:24
 
-tgas_name="V15.1"
+tgas_name="V15.2"
 
-Backup_script="backup_scriptV15.1.zip"
+Backup_script="backup_scriptV15.2.zip"
 
-Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V15.1/backup_scriptV15.1.zip"
+Backup_script_url="https://github.com/YAWAsau/backup_script/releases/download/V15.2/backup_scriptV15.2.zip"
