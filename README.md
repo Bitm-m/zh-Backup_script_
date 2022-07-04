@@ -26,6 +26,7 @@
  ---- 
 |构建时间|版本|备份脚本|
 | :----: | :----: | :----: |
+| 2022/07/04 11:24:10 | V15.5.6 | [speed-backupV15.5.6.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V15.5.6/speed-backupV15.5.6.zip) |
 | 2022/06/18 15:09:46 | V15.5.5 | [backup_scriptV15.5.5.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V15.5.5/backup_scriptV15.5.5.zip) |
 | 2022/06/11 14:34:36 | V15.5.4 | [backup_scriptV15.5.4.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V15.5.4/backup_scriptV15.5.4.zip) |
 | 2022/06/08 22:48:26 | V15.5.3 | [backup_scriptV15.5.3.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/V15.5.3/backup_scriptV15.5.3.zip) |
@@ -100,4 +101,4 @@
 | 2021/09/09 16:45:18 | 8.8.6 | [v8.8.6.zip](https://github.com/Petit-Abba/backup_script_zh-CN/releases/download/8.8.6/v8.8.6.zip) |
  ---- 
  
-若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2022-07-04 09:06:12`
+若使用有问题，请建立[issues](https://github.com/Petit-Abba/backup_script_zh-CN/issues)。`2022-07-04 11:23:54`
