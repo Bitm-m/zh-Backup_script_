@@ -80,3 +80,4 @@ https://github.com/YAWAsau/backup_script/releases/download/V15.5.5/backup_script
 https://github.com/YAWAsau/backup_script/releases/download/V15.5.6/speed-backupV15.5.6.zip
 https://github.com/YAWAsau/backup_script/releases/download/V15.5.7/speed-backupV15.5.7.zip
 https://github.com/YAWAsau/backup_script/releases/download/V15.5.8/speed-backupV15.5.8.zip
+https://github.com/YAWAsau/backup_script/releases/download/V15.5.9/speed-backupV15.5.9.zip
