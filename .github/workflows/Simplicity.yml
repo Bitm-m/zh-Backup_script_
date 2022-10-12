@@ -3,7 +3,7 @@ name: 检测更新
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'
 
 env: 
   TZ: Asia/Shanghai
